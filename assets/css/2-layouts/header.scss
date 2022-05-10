@@ -1,0 +1,190 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+
+
+/* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) { }
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) { }
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) { }
+
+/* TABLET BIG - 900px*/ 
+@include main.breakpoint(smash3TabletBig) { }
+
+/* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) { }
+
+/* MOBILE - 400px*/ 
+@include main.breakpoint(smashMobile) { }
+
+/*
+  ========================================
+  HEADER
+  ========================================
+*/
+
+
+header {
+    position: relative;
+    background: main.$ColorOne;
+    
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top:0;
+        width: 50%;
+        height: 100%;
+    }
+
+    &::after {
+        left: 0;
+        background: main.$ColorFour;
+    }
+
+    &::before {
+        right: 0;
+        background: main.$ColorTwo;
+    }
+
+    & .container {
+        height: 125px;
+        @include main.FlexBetCen;
+        position: relative;
+        z-index: 2;
+
+        & > div {
+            height: 100%;
+            @include main.FlexCenCen;
+
+            &.navigation {
+                justify-content: space-between;
+            }
+        }
+    }
+
+    // CONTENT
+
+    & .logo {
+        background: main.$ColorFour;
+        width: reset.toRem(350);
+    }
+
+    // NAVIGATION
+
+    & .navigation {
+        background: main.$ColorOne;
+        width: reset.toRem(850);
+        
+        & nav {
+            width: 100%;
+        }
+
+        & nav ul {
+            @include main.FlexCenCen;
+            gap: 0 5px;
+    
+            & li a {
+                height:125px;   
+                @include main.FlexCenCen;
+                @include main.paragrafo_1;
+                color: main.$ColorFour;
+                padding: 15px 30px;
+                font-weight: 600;
+                border-bottom: 4px solid transparent;
+                transition: 0.3s all;
+
+                &:hover {
+                    border-bottom: 4px solid main.$ColorZero;
+                }
+            }
+
+        }
+
+        & .lupa {
+            width: 15%;
+        }
+    }   
+
+    // SOCIAL
+
+    & .social {
+        @include main.FlexCenCen;
+        justify-content:end!important;
+        background: main.$ColorTwo;
+        width: reset.toRem(235);
+        gap: 0 10px;
+
+        & img {
+            transition: 0.3s all;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+} 
+
+
+
+/* ================
+   RESPONSIVE
+   ================ */
+
+/* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) {  
+    header {
+        & .container {
+            padding: 0!important;
+        }
+
+        & .logo {
+            width: reset.toRem(250);
+            padding:0 20px;
+        }
+
+        & .navigation {
+            background: main.$ColorOne;
+            width: reset.toRem(950);
+        }   
+
+        & .social {
+            width: reset.toRem(150);
+            padding: 0 15px;
+            justify-content:center!important;
+        }
+    }
+}
+
+/* LAPTOP - 1024px*/
+@include main.breakpoint(smashLaptop) { 
+    header {
+        & .container {
+            flex-wrap: wrap;
+
+                & .logo {
+                    width: 50%;
+                    order:-2;
+                }
+        
+                & .navigation {
+                    display: none;
+                }   
+        
+                & .social {
+                    width: 50%;
+                    order:-1;
+                }
+        } 
+    }
+
+    #dl-menu {
+        display: block!important;
+    }
+    
+}

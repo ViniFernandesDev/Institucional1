@@ -1,0 +1,194 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/*
+  ========================================
+  FOOTER
+  ========================================
+*/
+
+footer {
+
+    // CONTENT 1
+    & .content_1 {
+        background: main.$ColorOne;
+
+        & .container {
+            @include main.FlexCenCen;
+            gap:0 200px;
+            height: 160px;
+            
+            & ul {
+                @include main.FlexCenCen;
+                gap: 0 5px;
+        
+                & li {
+                    position: relative;
+                    @include main.FlexCenCen;
+
+                    &::after {
+                        content: '';
+                        background: #ffffff;
+                        height: 18px;
+                        width: 3px;
+                        position: absolute;
+                        right: 0;
+                    }
+
+                    &:last-child::after {
+                        display: none;
+                    }
+                }
+
+                & li a {
+                    height:100%;   
+                    @include main.FlexCenCen;
+                    @include main.paragrafo_1;
+                    color: main.$ColorFour;
+                    padding: 10px 20px;
+                    font-weight: 600;
+                    border-bottom: 4px solid transparent;
+                    transition: 0.3s all;
+    
+                    &:hover {
+                        border-bottom: 4px solid main.$ColorZero;
+                    }
+                }
+            }
+        }
+    }
+
+    // CONTENT 2
+    & .content_2 {
+        background: main.$ColorTwo;
+        
+        & .container {
+            @include main.FlexCenCen;
+            @include main.paragrafo_1;
+            gap:0 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        & h4 {
+            @include main.paragrafo_1;
+            color:main.$ColorZero;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        & .social_footer {
+            @include main.FlexBetCen;
+            color:main.$ColorFour;
+            gap:0 12px;
+        }
+
+        & .whats {
+            min-width: 250px;
+            padding: 12px 40px 12px 70px;
+            background: main.$ColorZero url('../images/ico_whats.png') left 20px center no-repeat;
+            color:main.$ColorFour;
+            @include main.paragrafo_1;
+            font-weight: 600;
+            @include main.FlexCenCen;
+            margin-bottom: 20px;
+            transition: 0.3s all;
+
+            &:hover {
+                background: main.$ColorOne url('../images/ico_whats.png') left 20px center no-repeat;
+            }
+        }
+
+        & .phone {
+            background: url('../images/ico_telefone.png') left 20px center no-repeat;
+            color:main.$ColorZero;
+            @include main.titleType5;
+            font-weight: 500;
+            @include main.FlexCenCen;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        & .white_box {
+            height: 175px;
+            background: main.$ColorFour;
+            border-radius: 20px;
+            padding: 30px 25px;
+            @include main.paragrafo_2;
+            line-height: 1.6;
+            text-align: center;
+
+            & div {
+                @include main.FlexBetCen;
+                margin-bottom: 15px;
+                
+            }
+        }
+    }
+
+    
+} 
+
+
+/* ================
+   RESPONSIVE
+   ================ */
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+    footer {
+        & .content_2 {
+            & .container {
+                gap:0 50px;
+            }
+
+            & h5,
+            & h4 {
+                @include main.paragrafo_2;
+                margin-bottom: 15px;
+            }
+
+            & .white_box {
+                width: 360px;
+                padding: 20px 15px;
+            }
+        }
+    }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+    footer .content_1 .container {
+        display:none;
+    }
+
+    footer .content_2 {
+            & .container {
+                flex-wrap: wrap;
+            }
+    }
+}
+
+/* TABLET BIG - 900px*/ 
+@include main.breakpoint(smashTabletBig) {
+    footer .content_2 {
+        & .white_box {
+            font-size: reset.toRem(14);
+            height: auto;
+        }
+
+        & h5,
+        & h4 {
+                font-size: reset.toRem(14);
+                margin-bottom: 0;
+            }
+
+        & h4 {
+            margin-bottom: 15px;
+        }
+
+        & .item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }    
+}

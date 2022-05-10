@@ -1,0 +1,495 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+@use '../3-modules/form.scss';
+
+/*
+  ========================================
+  CONTENT INDEX
+  ========================================
+*/
+
+.content_index {
+    background: #fff;
+    height: 1360px;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+    }
+
+    &::after {
+        background: url('../images/corte1.png') top right no-repeat;
+        width: 568px;
+        height: 1360px;
+        top: -95px;
+        right: 0;
+        z-index: 6;
+    }
+
+    &::before {
+        background:url('../images/corte_blue.png') top right no-repeat; 
+        width: 100%;
+        height: 1385px;
+        top: -15px;
+        right: 0;
+        z-index: 2;
+    }
+
+    // CONTENT 1
+
+    & .content_1 {
+        top: -55px;
+        position: relative;
+
+        & .container {
+            @include main.FlexBetCen;
+            justify-content: space-evenly;
+            max-width: reset.toRem(1640);
+            position: relative;
+            z-index: 7;
+        }
+
+        
+        & .txt {
+            width: 480px;
+            margin-top:45px;
+            position: relative;
+            left: 12%;
+            top: 20px;
+
+            & h6 {
+                @include main.titleType5;
+                color:main.$ColorOne;
+                margin-bottom: 5px;
+            }   
+
+            & h1 {
+                @include main.titleType2;
+                color:main.$ColorOne;
+                margin-bottom: 20px;
+            }
+
+            & p {
+                @include main.paragrafo_1;
+            }
+
+            & a {
+                margin-top: 50px;
+            }
+        }
+
+        & .img {
+            width: 1035px;
+            position: relative;
+            text-align: right;
+            margin-right: -15px;
+        }
+    }
+
+    // CONTENT 2
+
+    & .content_2 {
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            background: url('../images/corte3.png') top right 335px no-repeat;
+            width: 100%;
+            height: 625px;
+            top: 60px;
+            left: 0;
+        }
+
+
+        & .container {
+            @include main.FlexCenCen;
+            gap:0 60px;
+            position: relative;
+            z-index:8;
+        }
+
+        & .img {
+            margin-top: 30px;
+        }
+
+        & .txt {
+            width: 530px;
+            margin-right: 25px;
+    
+            & h2 {
+                @include main.titleType2;
+                color:main.$ColorFour;
+                margin-bottom: 20px;
+            }
+    
+            & p {
+                @include main.paragrafo_1;
+                color:main.$ColorFour;
+            }
+        }
+    }
+}
+
+/* HELP INDEX */
+
+.help_index {
+    background: #fff;
+    padding-bottom: 60px;
+    margin-top: -40px;
+    
+
+    & .container {
+        padding: 100px 110px;
+        box-shadow: 0px 2px 38px -28px rgb(0 0 0 / 50%);
+        background: #fff;
+        border-radius: 20px;
+        position: relative;
+        z-index: 10;
+        @include main.FlexBetCen;
+        gap: 0 20px;
+    }
+
+    & h2 {
+        @include main.titleType2;
+        color:main.$ColorOne;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    & p {
+        @include main.paragrafo_1;
+        color:main.$ColorThree;
+        font-weight: 500;
+    }
+
+    & h3 {
+        @include main.titleType6;
+        font-weight: 600;
+        line-height: 1.8;
+        color:main.$ColorOne;
+        margin-bottom: 15px;
+    }
+
+    & .form {
+        width: 700px;
+        
+        & h6 {
+            @include main.titleType5;
+            color:main.$ColorOne;
+            font-weight: 600;
+        }
+    }
+}
+
+/* ================
+   RESPONSIVE
+   ================ */
+
+/* CUSTOM */ /* 1700*/
+@media screen and (max-width: 106.25rem){
+    .content_index .content_1 .txt {
+        left: 0;
+    }
+
+    .content_index {
+        &::after {
+            background: url('../images/corte1.png') top right -12% no-repeat;
+            width: 100%;
+        }
+
+        &::before {
+            background: url('../images/corte_blue.png') top right -50% no-repeat;
+        }
+
+        & .content_2 {
+            &::before {
+                background: url('../images/corte3.png') top right 150px no-repeat;
+            }
+        }
+    }
+}
+
+/* CUSTOM */ /* 1500*/
+@media screen and (max-width: 93.75rem){
+    .content_index {
+        overflow: hidden;
+
+        & .content_1 {
+            & .img {
+                width: 800px;
+            }
+
+            & .txt h1 {
+                @include main.titleType3;
+            }
+        }
+
+        &::after {
+            background: url('../images/corte1.png') top right -12% no-repeat;
+            width: 100%;
+            height: 1200px;
+        }
+
+        &::before {
+            background: url('../images/corte_blue.png') top left no-repeat;
+            right:-10%;
+            height: 1200px;
+        }
+
+        & .content_2 {
+            position: relative;
+    
+            &::before{
+                content: '';
+                position: absolute;
+            }
+    
+            &::before {
+                background: url('../images/corte3.png') top left no-repeat;
+                width: 100%;
+                height: 625px;
+                top: 30px;
+                left: 0;
+            }
+
+            & .img {
+                margin-left: -200px;
+                & img {
+                    width: 360px;
+                }
+            }
+
+            & .txt {
+                & h2 {
+                    font-size: reset.toRem(45);
+                }
+
+                & p {
+                    font-size: reset.toRem(16);
+                }
+            }
+        }
+        
+    }
+}
+
+/* CUSTOM */ /* 1250*/
+@media screen and (max-width: 78.125rem){
+    .content_index {
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            background: url('../images/corte_blue.png') top right no-repeat;
+            right:-11%;
+            background-size: 100%;
+        }
+
+        
+    }
+}
+
+
+
+/* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) {
+    .help_index .container {
+        padding: 50px 40px;
+        justify-content: space-evenly;
+    }
+}
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+    .help_index {
+        
+        & h2 {
+            @include main.titleType3;
+        }
+
+        & p {
+            @include main.paragrafo_2;
+            color:main.$ColorThree;
+            font-weight: 500;
+        }
+
+    }
+
+        // CONTENT 2
+    .content_index {
+        & .content_2 {
+            position: relative;
+    
+            &::before {
+                background: url('../images/corte3.png') top right 50% no-repeat;
+            }
+        }
+    }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+    .content_index {
+        height: auto;
+
+        & .content_1 {
+            top: inherit;
+            margin-top: 20px;
+
+            & .txt {
+                margin-top: 0;
+                top: inherit;
+
+                & p {
+                    @include main.paragrafo_2;
+                }
+
+                & h1 {
+                    font-size: reset.toRem(30);
+                }
+
+                & a {
+                    margin-top: 15px;
+                }
+            }
+
+            & .img {
+                padding-right: 15px;
+            }
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        & .content_2 {
+            padding: 25px 0;
+            background: #206ab2;
+
+            & .img {
+                margin-left: 0;
+
+                & img {
+                    width: 200px;
+                }
+            }
+
+            & .txt {
+                & h2 {
+                    @include main.titleType4;
+                }
+
+                & p {
+                    @include main.paragrafo_2;
+                }
+            }
+
+            &::before {
+                display: none;
+            }
+
+            
+        }
+    }
+    
+
+    .help_index {
+        margin-top: -10px;
+                
+        & .container {
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        & h2 {
+            @include main.titleType4;
+
+            & br {
+                display: none;
+            }
+        }
+
+        & .txt {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+
+
+            & p br {
+                display: none;
+            }
+        }
+
+        & .form {
+            width: 100%;
+            
+            & h6 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+
+/* TABLET BIG - 900px*/ 
+@include main.breakpoint(smashTabletBig) {
+    .content_index {
+        & .container {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        & .content_1 {
+            & .txt {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 25px;
+
+                & p br {
+                    display: none;
+                }
+            }
+
+            & .img {
+               display: none;
+            }
+        }
+
+        & .content_2 {
+            & .img {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 25px;
+                margin-top:0;
+            }
+
+            & .txt {
+                margin-right: 0;
+                width: 100%;
+                text-align: center;
+
+                & p br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .help_index h3 br {
+        display: none;
+    }
+}

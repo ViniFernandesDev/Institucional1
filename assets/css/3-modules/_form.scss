@@ -1,0 +1,219 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/* BUTTONS */
+
+.btn_type1 {
+    color:main.$ColorOne;
+    border: 3px solid main.$ColorOne;
+    display: inline-block;
+    padding: 18px 15px;
+    font-size: reset.toRem(16);
+    margin-top: 20px;
+    transition: 0.3s all;
+
+    &:hover {
+        background: main.$ColorOne;
+        color:#ffffff;
+    }
+}
+
+.btn_type2 {
+    background: main.$ColorTwo;
+    border:3px solid transparent;
+    color: #fff;
+    display: inline-block;
+    padding: 18px 16px;
+    font-size: reset.toRem(16);
+    font-weight: 400;
+    margin-top: 20px;
+    transition: 0.3s all;
+
+    &:hover {
+        border:3px solid main.$ColorTwo;
+        background: main.$ColorOne;
+        color:#ffffff;
+    }
+}
+
+
+.inputs {
+
+    & .inputs-content {
+        @include main.FlexBetCen;
+        flex-wrap: wrap;
+    }
+    
+    & .margin {
+        margin-bottom: 25px;
+    }
+
+}
+
+.inputs select,
+.inputs input[type="text"], 
+.inputs textarea {
+      -webkit-appearance: none !important;
+      -moz-appearance:     none !important;
+      padding: reset.toRem(18) reset.toRem(16);
+      font-size: reset.toRem(16);
+      border-radius: 35px;
+      background:#f3f3f3;
+      border: 2px solid #f3f3f3;
+      outline: none;
+      color: #5b5a5a;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.5s ease;
+  }
+  
+  .inputs textarea:focus,
+  .inputs select:focus,
+  .inputs input:focus {
+      border:2px solid #0a307d;
+  }
+  
+  .inputs select {
+    background:#efefef url("../img/seta_form.png") right 20px center no-repeat;
+    width: 100%;
+    padding: 13px 25px;
+    cursor: pointer;
+  }
+
+  .inputs .btn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .inputs .btn input[type="submit"] {
+      border:none;
+      outline: none;
+      cursor:pointer;
+      margin: 20px 0 0 0;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      background: main.$ColorTwo;
+      color: #fff;
+      display: inline-block;
+      padding: reset.toRem(18) reset.toRem(16);
+      font-size: reset.toRem(16);
+      font-weight: 400;
+      margin-top: 20px;
+      min-width: 150px;
+      border:3px solid transparent;
+
+      &:hover {
+        border:3px solid main.$ColorTwo;
+        background: main.$ColorOne;
+        color:#ffffff;
+    }
+  }
+  
+/*ANEXAR*/
+
+.relative {
+    position: relative;
+}
+.file-input {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    padding-left: 4px;
+}
+.out-file {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #fff url("../img/seta.png") right 10px center no-repeat;
+    opacity: 1;
+    cursor: pointer;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;
+
+    padding: reset.toRem(22) reset.toRem(16);
+    font-size: reset.toRem(16);
+    border-radius: 35px;
+    border: 2px solid #f3f3f3;
+    outline: none;
+    color: #5b5a5a;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+.out-file:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*campo file */
+.button-anexar .file {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/*nome do arquivo*/
+.file-input span {
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 0 0 11px;
+}
+
+
+.box_anexar input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    background:#fff;
+    border: 2px solid #000;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.box_anexar textarea:focus,
+.box_anexar input[type="text"]:focus {
+  border:2px solid #fef200;
+}
+
+.box_anexar :-ms-input-placeholder {  
+    color: #464646;  
+}
+
+  /**/
+  
+  .formulario.inputs ::-webkit-input-placeholder {
+      color: #464646;
+  }
+
+  
+/* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) {
+    .inputs {
+        & .margin {
+            width: 100%!important;
+            margin-bottom: 20px;
+        }
+    }
+
+    .inputs select,
+    .inputs input[type="text"], 
+    .inputs textarea {
+          padding: 12px 30px;
+      }
+}
