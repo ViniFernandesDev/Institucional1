@@ -1,3 +1,4 @@
+@use 'sass:math';
 
 /*RESET*/
 *, *:before, *:after{
@@ -25,7 +26,9 @@ footer, header, nav, section, main{
     display: block;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 ol, ul{
     list-style: none;
@@ -93,7 +96,6 @@ img {
 
 // CONVERT PX TO REM
 @function toRem($value) {
-    $remValue: ($value / 16) + rem; 
+    $remValue: math.div($value,16) + rem; 
     @return $remValue;
 }
-

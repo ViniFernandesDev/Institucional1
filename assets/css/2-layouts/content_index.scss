@@ -20,7 +20,7 @@
     }
 
     &::after {
-        background: url('../images/corte1.png') top right no-repeat;
+        background: url('../img/corte1.png') top right no-repeat;
         width: 568px;
         height: 1360px;
         top: -95px;
@@ -29,7 +29,7 @@
     }
 
     &::before {
-        background:url('../images/corte_blue.png') top right no-repeat; 
+        background:url('../img/corte_blue.png') top right no-repeat; 
         width: 100%;
         height: 1385px;
         top: -15px;
@@ -59,18 +59,18 @@
             left: 12%;
             top: 20px;
 
-            & h6 {
-                @include main.titleType5;
-                color:main.$ColorOne;
-                margin-bottom: 5px;
-            }   
-
             & h1 {
                 @include main.titleType2;
                 color:main.$ColorOne;
-                margin-bottom: 20px;
+                margin-bottom: 5px;
             }
 
+            & h2 {
+                @include main.titleType5;
+                color:main.$ColorOne;
+                margin-bottom: 20px;
+            }   
+            
             & p {
                 @include main.paragrafo_1;
             }
@@ -99,7 +99,7 @@
         }
 
         &::before {
-            background: url('../images/corte3.png') top right 335px no-repeat;
+            background: url('../img/corte3.png') top right 335px no-repeat;
             width: 100%;
             height: 625px;
             top: 60px;
@@ -199,17 +199,17 @@
 
     .content_index {
         &::after {
-            background: url('../images/corte1.png') top right -12% no-repeat;
+            background: url('../img/corte1.png') top right -12% no-repeat;
             width: 100%;
         }
 
         &::before {
-            background: url('../images/corte_blue.png') top right -50% no-repeat;
+            background: url('../img/corte_blue.png') top right -50% no-repeat;
         }
 
         & .content_2 {
             &::before {
-                background: url('../images/corte3.png') top right 150px no-repeat;
+                background: url('../img/corte3.png') top right 150px no-repeat;
             }
         }
     }
@@ -231,13 +231,13 @@
         }
 
         &::after {
-            background: url('../images/corte1.png') top right -12% no-repeat;
+            background: url('../img/corte1.png') top right -12% no-repeat;
             width: 100%;
             height: 1200px;
         }
 
         &::before {
-            background: url('../images/corte_blue.png') top left no-repeat;
+            background: url('../img/corte_blue.png') top left no-repeat;
             right:-10%;
             height: 1200px;
         }
@@ -251,7 +251,7 @@
             }
     
             &::before {
-                background: url('../images/corte3.png') top left no-repeat;
+                background: url('../img/corte3.png') top left no-repeat;
                 width: 100%;
                 height: 625px;
                 top: 30px;
@@ -288,7 +288,7 @@
         }
 
         &::before {
-            background: url('../images/corte_blue.png') top right no-repeat;
+            background: url('../img/corte_blue.png') top right no-repeat;
             right:-11%;
             background-size: 100%;
         }
@@ -329,7 +329,7 @@
             position: relative;
     
             &::before {
-                background: url('../images/corte3.png') top right 50% no-repeat;
+                background: url('../img/corte3.png') top right 50% no-repeat;
             }
         }
     }

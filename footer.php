@@ -4,7 +4,7 @@
         <div class="container">
 
             <div class="logo_rdp">
-                <a href="index.php"><img src="img/logo_rdp.png" alt="Logo"></a>
+                <a href="index.php"><img src="assets/img/logo_rdp.png" alt="Logo"></a>
             </div><!--logo_rdp-->
 
             <div class="menu_footer">
@@ -25,17 +25,17 @@
         <div class="container">
 
             <div class="item">
-                <h4>Rua João Ziero, 115,  Bairro Menino Deus<br>
+                <h4>Rua João 214, Bairro Voando<br>
                 Joaçaba – SC | 89600-000</h4>
 
                 <div class="social_footer">
                     <div>
-                        <a href="https://www.instagram.com/tecnomoldes_ferramentaria/" target="_blank">
+                        <a href="https://www.instagram.com" target="_blank">
                             <img src="assets/img/ico_insta.png" alt="Instagram">
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.facebook.com/tecnomoldes" target="_blank">
+                        <a href="https://www.facebook.com" target="_blank">
                             <img src="assets/img/ico_face.png" alt="Facebook">
                         </a>
                     </div>
@@ -46,12 +46,12 @@
 
             <div class="item">
                 <div>
-                    <a href="https://api.whatsapp.com/send?phone=5549999720485" class="whats" target="_blank">49 99972 0485</a>
+                    <a href="https://api.whatsapp.com/send?phone=554999999999" class="whats" target="_blank">49 99999 9999</a>
                 </div>
 
                 <div class="phone">
-                    49 3522.1235 <br>
-                    49 3521.4019
+                    49 3522.2222 <br>
+                    49 3521.0000
                 </div>
             </div><!--item-->
 

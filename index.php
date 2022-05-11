@@ -17,8 +17,9 @@
     <div class="content_1">
         <div class="container">
             <div class="txt">
-                <h6>Subtitle</h6>
-                <h1>Título</h1>
+                <h1>Título</h1>    
+                <h2>Subtitle</h2>
+                
 
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
 
@@ -62,7 +63,7 @@
             <h3>Em caso de dúvidas, entre em contato com <br>
             a central de atendimento através do telefone</h3>
 
-            <h2>49 3522.1235</h2>
+            <h2>49 3522.2222</h2>
         </div>
 
         <div class="form inputs">

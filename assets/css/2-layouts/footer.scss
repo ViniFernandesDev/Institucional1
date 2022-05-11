@@ -86,7 +86,7 @@ footer {
         & .whats {
             min-width: 250px;
             padding: 12px 40px 12px 70px;
-            background: main.$ColorZero url('../images/ico_whats.png') left 20px center no-repeat;
+            background: main.$ColorZero url('../img/ico_whats.png') left 20px center no-repeat;
             color:main.$ColorFour;
             @include main.paragrafo_1;
             font-weight: 600;
@@ -95,12 +95,12 @@ footer {
             transition: 0.3s all;
 
             &:hover {
-                background: main.$ColorOne url('../images/ico_whats.png') left 20px center no-repeat;
+                background: main.$ColorOne url('../img/ico_whats.png') left 20px center no-repeat;
             }
         }
 
         & .phone {
-            background: url('../images/ico_telefone.png') left 20px center no-repeat;
+            background: url('../img/ico_telefone.png') left 20px center no-repeat;
             color:main.$ColorZero;
             @include main.titleType5;
             font-weight: 500;

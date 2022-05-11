@@ -24,6 +24,10 @@ footer, header, nav, section, main {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -340,7 +344,7 @@ footer .content_2 .social_footer {
 footer .content_2 .whats {
   min-width: 250px;
   padding: 12px 40px 12px 70px;
-  background: #3a9bfa url("../images/ico_whats.png") left 20px center no-repeat;
+  background: #3a9bfa url("../img/ico_whats.png") left 20px center no-repeat;
   color: #ffffff;
   font-size: 1.125rem;
   font-weight: 600;
@@ -351,10 +355,10 @@ footer .content_2 .whats {
   transition: 0.3s all;
 }
 footer .content_2 .whats:hover {
-  background: #206ab2 url("../images/ico_whats.png") left 20px center no-repeat;
+  background: #206ab2 url("../img/ico_whats.png") left 20px center no-repeat;
 }
 footer .content_2 .phone {
-  background: url("../images/ico_telefone.png") left 20px center no-repeat;
+  background: url("../img/ico_telefone.png") left 20px center no-repeat;
   color: #3a9bfa;
   font-size: 1.25rem;
   font-weight: 500;
@@ -642,7 +646,7 @@ footer .content_2 .white_box div {
   position: absolute;
 }
 .content_index::after {
-  background: url("../images/corte1.png") top right no-repeat;
+  background: url("../img/corte1.png") top right no-repeat;
   width: 568px;
   height: 1360px;
   top: -95px;
@@ -650,7 +654,7 @@ footer .content_2 .white_box div {
   z-index: 6;
 }
 .content_index::before {
-  background: url("../images/corte_blue.png") top right no-repeat;
+  background: url("../img/corte_blue.png") top right no-repeat;
   width: 100%;
   height: 1385px;
   top: -15px;
@@ -677,15 +681,15 @@ footer .content_2 .white_box div {
   left: 12%;
   top: 20px;
 }
-.content_index .content_1 .txt h6 {
-  font-size: 1.25rem;
-  color: #206ab2;
-  margin-bottom: 5px;
-}
 .content_index .content_1 .txt h1 {
   font-size: 3.125rem;
   line-height: 1.2;
   font-weight: 900;
+  color: #206ab2;
+  margin-bottom: 5px;
+}
+.content_index .content_1 .txt h2 {
+  font-size: 1.25rem;
   color: #206ab2;
   margin-bottom: 20px;
 }
@@ -709,7 +713,7 @@ footer .content_2 .white_box div {
   position: absolute;
 }
 .content_index .content_2::before {
-  background: url("../images/corte3.png") top right 335px no-repeat;
+  background: url("../img/corte3.png") top right 335px no-repeat;
   width: 100%;
   height: 625px;
   top: 60px;
@@ -800,14 +804,14 @@ footer .content_2 .white_box div {
   }
 
   .content_index::after {
-    background: url("../images/corte1.png") top right -12% no-repeat;
+    background: url("../img/corte1.png") top right -12% no-repeat;
     width: 100%;
   }
   .content_index::before {
-    background: url("../images/corte_blue.png") top right -50% no-repeat;
+    background: url("../img/corte_blue.png") top right -50% no-repeat;
   }
   .content_index .content_2::before {
-    background: url("../images/corte3.png") top right 150px no-repeat;
+    background: url("../img/corte3.png") top right 150px no-repeat;
   }
 }
 /* CUSTOM */
@@ -824,12 +828,12 @@ footer .content_2 .white_box div {
     font-weight: 900;
   }
   .content_index::after {
-    background: url("../images/corte1.png") top right -12% no-repeat;
+    background: url("../img/corte1.png") top right -12% no-repeat;
     width: 100%;
     height: 1200px;
   }
   .content_index::before {
-    background: url("../images/corte_blue.png") top left no-repeat;
+    background: url("../img/corte_blue.png") top left no-repeat;
     right: -10%;
     height: 1200px;
   }
@@ -841,7 +845,7 @@ footer .content_2 .white_box div {
     position: absolute;
   }
   .content_index .content_2::before {
-    background: url("../images/corte3.png") top left no-repeat;
+    background: url("../img/corte3.png") top left no-repeat;
     width: 100%;
     height: 625px;
     top: 30px;
@@ -867,7 +871,7 @@ footer .content_2 .white_box div {
     display: none;
   }
   .content_index::before {
-    background: url("../images/corte_blue.png") top right no-repeat;
+    background: url("../img/corte_blue.png") top right no-repeat;
     right: -11%;
     background-size: 100%;
   }
@@ -895,7 +899,7 @@ footer .content_2 .white_box div {
     position: relative;
   }
   .content_index .content_2::before {
-    background: url("../images/corte3.png") top right 50% no-repeat;
+    background: url("../img/corte3.png") top right 50% no-repeat;
   }
 }
 /* LAPTOP - 1024px*/
