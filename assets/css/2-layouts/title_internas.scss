@@ -1,0 +1,106 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+@use '../3-modules/form.scss';
+
+/*
+  ========================================
+  CONTENT INDEX
+  ========================================
+*/
+
+.title_internas {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 105px;
+        background:main.$ColorZero;
+        width: 30%;
+        left: 0;
+        bottom: -50px;
+    }
+
+    & .container {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+    }
+
+    &.sobre_nos {
+        background: url('../img/title_sobre_nos.jpg') center no-repeat;
+    }
+
+    &.produtos_servicos {
+        background: url('../img/title_produtos.jpg') center no-repeat;
+    }
+
+    &.contato {
+        background: url('../img/title_fale_conosco.jpg') center no-repeat;
+    }
+
+    & h1 {
+        min-width: 500px;
+        display: flex;
+        align-items: center;
+        height: 105px;
+        background:main.$ColorZero;
+        @include main.titleType3;
+        color:main.$ColorFour;
+        position: relative;
+        top:50px;
+        z-index: 2;
+        padding-left: 90px;
+        padding-right: 25px;
+    }
+}
+
+/* ================
+   RESPONSIVE
+   ================ */
+
+   
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+    .title_internas {
+        padding: 0 20px;
+
+        &::after {
+            display: none;
+        }
+
+        & .container {
+            @include main.FlexCenCen;
+        }
+
+        & h1 {
+            min-width: auto;
+            @include main.titleType4;
+            @include main.FlexCenCen;
+            top:inherit;
+            height: auto;
+            padding: 15px 25px;
+            text-align: center;
+        }
+    }
+}
+
+/* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) {
+    .title_internas {
+        padding: 0;
+        height: auto;
+        background: none!important;
+
+        & .container {
+            padding: 0;
+        }
+
+        & h1 {
+            min-width: auto;
+            width: 100%;
+        }
+    }
+ }

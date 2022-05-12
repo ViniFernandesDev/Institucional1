@@ -636,6 +636,99 @@ footer .content_2 .white_box div {
   CONTENT INDEX
   ========================================
 */
+.title_internas {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+}
+.title_internas::after {
+  content: "";
+  position: absolute;
+  height: 105px;
+  background: #3a9bfa;
+  width: 30%;
+  left: 0;
+  bottom: -50px;
+}
+.title_internas .container {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+.title_internas.sobre_nos {
+  background: url("../img/title_sobre_nos.jpg") center no-repeat;
+}
+.title_internas.produtos_servicos {
+  background: url("../img/title_produtos.jpg") center no-repeat;
+}
+.title_internas.contato {
+  background: url("../img/title_fale_conosco.jpg") center no-repeat;
+}
+.title_internas h1 {
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  height: 105px;
+  background: #3a9bfa;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+  padding-left: 90px;
+  padding-right: 25px;
+}
+
+/* ================
+   RESPONSIVE
+   ================ */
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  .title_internas {
+    padding: 0 20px;
+  }
+  .title_internas::after {
+    display: none;
+  }
+  .title_internas .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title_internas h1 {
+    min-width: auto;
+    font-size: 1.875rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: inherit;
+    height: auto;
+    padding: 15px 25px;
+    text-align: center;
+  }
+}
+/* TABLET - 600px*/
+@media (max-width: 37.5rem) {
+  .title_internas {
+    padding: 0;
+    height: auto;
+    background: none !important;
+  }
+  .title_internas .container {
+    padding: 0;
+  }
+  .title_internas h1 {
+    min-width: auto;
+    width: 100%;
+  }
+}
+/*
+  ========================================
+  CONTENT INDEX
+  ========================================
+*/
 .content_index {
   background: #fff;
   height: 1360px;
@@ -1018,6 +1111,109 @@ footer .content_2 .white_box div {
 
   .help_index h3 br {
     display: none;
+  }
+}
+/*
+  ========================================
+  SOBRE NOS
+  ========================================
+*/
+.content_sobre {
+  background: #ffffff;
+  padding-top: 180px;
+  padding-bottom: 150px;
+}
+.content_sobre p {
+  font-size: 1.125rem;
+}
+.content_sobre .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_sobre .content_1 {
+  margin-bottom: 40px;
+}
+.content_sobre .content_1 .txt {
+  width: 500px;
+  margin-left: 90px;
+}
+.content_sobre .content_1 .txt h2 {
+  font-size: 1.875rem;
+  font-weight: 900;
+  font-size: 1.625rem;
+  color: #206ab2;
+  margin-bottom: 20px;
+}
+.content_sobre .content_1 .img {
+  margin-right: 110px;
+}
+.content_sobre .content_2 .txt {
+  width: 460px;
+  margin-right: 220px;
+}
+.content_sobre .content_2 p:first-child {
+  color: #206ab2;
+}
+
+/* ================
+   RESPONSIVE
+   ================ */
+/* DESKTOP LARGE - 1400px*/
+@media screen and (max-width: 87.5rem) {
+  .content_sobre {
+    padding-top: 80px;
+  }
+  .content_sobre .container {
+    justify-content: space-evenly;
+    padding: 0 20px;
+    gap: 0 30px;
+  }
+  .content_sobre .content_1 .txt {
+    margin-left: 0;
+  }
+  .content_sobre .content_1 .img {
+    margin-right: 0px;
+  }
+  .content_sobre .content_2 .txt {
+    width: 460px;
+    margin-right: 0px;
+  }
+}
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  .content_sobre {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .content_sobre p {
+    font-size: 1rem;
+  }
+  .content_sobre .container {
+    flex-wrap: wrap;
+  }
+  .content_sobre .content_1 {
+    margin-bottom: 40px;
+  }
+  .content_sobre .content_1 .img img {
+    width: 600px;
+  }
+  .content_sobre .content_1 .txt {
+    width: 100%;
+  }
+  .content_sobre .content_1 .txt h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 900;
+    font-size: 1.625rem;
+  }
+  .content_sobre .content_1 .txt h2 br {
+    display: none;
+  }
+  .content_sobre .content_2 .txt {
+    order: -1;
+    width: 100%;
+    text-align: center;
   }
 }
 #dl-menu {
