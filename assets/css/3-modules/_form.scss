@@ -96,11 +96,12 @@
       color: #fff;
       display: inline-block;
       padding: reset.toRem(18) reset.toRem(16);
-      font-size: reset.toRem(16);
+      font-size: reset.toRem(18);
       font-weight: 400;
       margin-top: 20px;
       min-width: 150px;
       border:3px solid transparent;
+      border-radius:10px;
 
       &:hover {
         border:3px solid main.$ColorTwo;

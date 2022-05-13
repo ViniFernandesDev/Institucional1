@@ -517,11 +517,12 @@ footer .content_2 .white_box div {
   color: #fff;
   display: inline-block;
   padding: 1.125rem 1rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-top: 20px;
   min-width: 150px;
   border: 3px solid transparent;
+  border-radius: 10px;
 }
 .inputs .btn input[type=submit]:hover {
   border: 3px solid #2c2b2a;
@@ -1214,6 +1215,163 @@ footer .content_2 .white_box div {
     order: -1;
     width: 100%;
     text-align: center;
+  }
+}
+/*
+  ========================================
+  CONTATO
+  ========================================
+*/
+.content_contato {
+  padding-top: 160px;
+  background: #ffffff;
+  /* INFO */
+}
+.content_contato .container {
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0 60px;
+}
+.content_contato .formulario {
+  width: 690px;
+}
+.content_contato .formulario h2 {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: #206ab2;
+  margin-bottom: 35px;
+}
+.content_contato .formulario h4 {
+  font-size: 1.25rem;
+  color: #5b5a5a;
+}
+.content_contato .info {
+  width: 380px;
+  margin-bottom: 80px;
+  margin-top: 110px;
+}
+.content_contato .info h4 {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: #206ab2;
+  margin-bottom: 35px;
+}
+.content_contato .info div {
+  margin-bottom: 25px;
+}
+.content_contato .info h5 {
+  font-size: 1.5rem;
+  color: #206ab2;
+  margin-bottom: 10px;
+}
+.content_contato .info p a, .content_contato .info p {
+  font-size: 1.125rem;
+  color: #1f252b;
+}
+.content_contato .info h6 {
+  font-size: 1.5rem;
+  color: #5b5a5a;
+  font-weight: 400;
+}
+.content_contato .info .ico {
+  font-size: 1.125rem;
+  color: #1f252b;
+  display: block;
+  padding: 5px 0 5px 45px;
+  margin: 15px 0;
+  font-weight: 400;
+  transition: 0.3s all;
+}
+.content_contato .info .ico.ico_whats {
+  background: url("../img/ico_whats_blue.png") left center no-repeat;
+}
+.content_contato .info .ico.ico_insta {
+  background: url("../img/ico_insta_blue.png") left center no-repeat;
+}
+.content_contato .info .ico.ico_face {
+  background: url("../img/ico_face_blue.png") left center no-repeat;
+}
+.content_contato .info .ico:hover {
+  color: #206ab2;
+}
+
+/* ================
+   RESPONSIVE
+   ================ */
+/* DESKTOP LARGE - 1400px*/
+@media screen and (max-width: 87.5rem) {
+  .content_contato {
+    padding-top: 80px;
+  }
+  .content_contato .container {
+    padding: 0 20px;
+    justify-content: space-evenly;
+  }
+}
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  .content_contato {
+    padding-top: 30px;
+  }
+  .content_contato .info p a, .content_contato .info p {
+    font-size: 1rem;
+  }
+}
+/* TABLET BIG - 900px*/
+@media (max-width: 56.25rem) {
+  .content_contato .container {
+    flex-wrap: wrap;
+    /* INFO */
+  }
+  .content_contato .container .formulario {
+    width: 100%;
+  }
+  .content_contato .container .formulario h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .content_contato .container h4 {
+    text-align: center;
+  }
+  .content_contato .container .info {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content_contato .container .info h4 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+  .content_contato .container .info h5 {
+    font-size: 1.25rem;
+    color: #206ab2;
+    margin-bottom: 10px;
+  }
+  .content_contato .container .info p a, .content_contato .container .info p {
+    font-size: 1rem;
+  }
+  .content_contato .container .info h6 {
+    font-size: 1.125rem;
+    color: #5b5a5a;
+    font-weight: 400;
+  }
+  .content_contato .container .info .ico {
+    margin: 10px 0;
+    padding: 5px 0 5px 30px;
+  }
+  .content_contato .container .info span {
+    display: block;
+    text-align: center;
+  }
+  .content_contato .container .info span a {
+    display: inline-block !important;
   }
 }
 #dl-menu {

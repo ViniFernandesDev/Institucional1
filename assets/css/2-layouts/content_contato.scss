@@ -1,0 +1,200 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+@use '../2-layouts/title_internas.scss';
+@use '../3-modules/form.scss';
+
+/*
+  ========================================
+  CONTATO
+  ========================================
+*/
+
+.content_contato {
+    padding-top: 160px;
+    background: #ffffff;
+
+    & .container {
+      padding: 0 120px;
+      @include main.FlexBetCen;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      gap:0 60px;
+    }
+
+    & .formulario {
+      width: 690px;
+
+      & h2 {
+        @include main.titleType4;
+        color:main.$ColorOne;
+        margin-bottom: 35px;
+      }
+
+      & h4 {
+        font-size: reset.toRem(20);
+        color: #5b5a5a;
+      }
+    }
+
+    /* INFO */
+
+    & .info {
+      width: 380px;
+      margin-bottom: 80px;
+      margin-top: 110px;
+
+      & h4 {
+        @include main.titleType4;
+        color:main.$ColorOne;
+        margin-bottom: 35px;
+      }
+
+      & div {
+        margin-bottom: 25px;
+      }
+
+      & h5 {
+        font-size: reset.toRem(24);
+        color:main.$ColorOne;
+        margin-bottom: 10px;
+      }
+
+      & p a,
+      & p {
+        @include main.paragrafo_1;
+        color:#1f252b;
+      }
+
+      & h6 {
+        font-size: reset.toRem(24);
+        color:#5b5a5a;
+        font-weight: 400;
+      }
+
+      & .ico {
+        @include main.paragrafo_1;
+        color:#1f252b;
+        display: block;
+        padding: 5px 0 5px 45px;
+        margin: 15px 0;
+        font-weight: 400;
+        transition: 0.3s all;
+
+        &.ico_whats {
+          background: url('../img/ico_whats_blue.png') left center no-repeat;
+        }
+
+        &.ico_insta {
+          background: url('../img/ico_insta_blue.png') left center no-repeat;
+        }
+
+        &.ico_face {
+          background: url('../img/ico_face_blue.png') left center no-repeat;
+        }
+
+        &:hover {
+          color:#206ab2;
+        }
+      }
+    }
+}
+
+/* ================
+   RESPONSIVE
+   ================ */
+
+   
+/* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) { 
+  .content_contato {
+    padding-top: 80px;
+
+    & .container{
+      padding: 0 20px;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+  .content_contato {
+    padding-top: 30px;
+
+    & .info {
+      & p a,
+      & p {
+        @include main.paragrafo_2;
+      }
+    }
+  }
+}
+
+/* TABLET BIG - 900px*/ 
+@include main.breakpoint(smashTabletBig) {
+  .content_contato .container {
+    flex-wrap: wrap;
+    
+
+    & .formulario {
+      width: 100%;
+
+      & h2 {
+        @include main.titleType5;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+    }
+
+    & h4 {
+      text-align: center;
+    }
+
+    /* INFO */
+
+    & .info {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      text-align: center;
+
+        & h4 {
+          @include main.titleType5;
+          text-transform: uppercase;
+        }
+
+        & h5 {
+          @include main.titleType5;
+          color:main.$ColorOne;
+          margin-bottom: 10px;
+        }
+
+        & p a,
+        & p {
+          @include main.paragrafo_2;
+        }
+
+        & h6 {
+          @include main.paragrafo_1;
+          color:#5b5a5a;
+          font-weight: 400;
+        }
+
+        & .ico {
+          margin: 10px 0;
+          padding:5px 0 5px 30px;
+        }
+
+        & span {
+          display: block;
+          text-align: center;
+          
+          & a {
+            display: inline-block!important;
+          }
+        }
+      
+    }
+  }
+}
