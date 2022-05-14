@@ -1,0 +1,693 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/*
+  ========================================
+  PRODUTOS SERVICOS
+  ========================================
+*/
+
+.content_prod {
+    background: #ffffff;
+
+    & .content_1 {
+        padding: 120px 0 70px 0;
+        
+        & .display {
+            @include main.FlexCenCen;
+            gap: 0 80px;
+            padding-bottom: 65px;
+            position: relative;
+            margin-bottom: 55px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 680px;
+                height: 2px;
+                background: #cee6fe;
+                bottom: 0;
+            }
+        }
+
+        & h2 {
+            @include main.titleType4;
+            color:main.$ColorOne;
+        }
+        
+        & span {
+            height: 100px;
+            width: 5px;
+            display: block;
+            background: main.$ColorOne;
+            transform: skewX(-17deg);
+        }
+
+        & p {
+           @include main.paragrafo_1;
+           color:main.$ColorThree;
+           margin-bottom: 0; 
+        }
+    }
+
+    // CONTENT 2
+
+    & .content_2 {
+        position: relative;
+        z-index: 2;
+
+        & h2 {
+            @include main.titleType4;
+            color:main.$ColorOne;
+            margin-bottom: 40px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        & .container {
+            @include main.FlexCenCen;
+            gap:0 20px;
+
+            & .item {
+               min-height: 320px;
+                width: 330px;
+                padding: 30px 50px;
+                @include main.titleType5;
+                color:#474442;
+                font-weight: 600;
+                background: #ffffff;
+                border-radius: 20px;
+                box-shadow: 0px 2px 38px -28px rgba(0, 0, 0, 0.5);
+
+                & .ico {
+                    padding-bottom: 25px;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background: #00c0ff;
+                        height: 4px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+     // CONTENT 3
+
+     & .content_3 {
+        padding-top: 130px;
+        padding-bottom: 40px;
+        background: main.$ColorZero;
+        margin-top:-50px;
+
+        & h3 {
+            color:#255c86;
+            text-align: center;
+            font-size: reset.toRem(22);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        & .display {
+            @include main.FlexCenCen;
+            align-items: flex-start;
+            gap: 0 55px;
+
+            & div {
+                font-size: reset.toRem(20);
+                color:#ffffff;
+                font-weight: 600;
+                padding-top: 50px;
+                text-align: center;
+                background: url('../img/produtos_servicos/check.png') top center no-repeat;
+            }
+        }
+     }
+     
+     // CONTENT 4 
+
+     & .content_4 {
+        height: 380px;
+        background: url('../img/produtos_servicos/img_conheca.jpg') center no-repeat;
+        @include main.FlexCenCen;
+
+        & h1 {
+            @include main.titleType2;
+            text-align: center;
+            color:#ffffff;
+        }
+     }
+
+     // CONTENT 5 
+
+     .content_5 {
+        padding: 80px 0;
+
+        & h3 {
+            @include main.titleType4;
+            color:#474442;
+            margin-bottom: 20px;
+        }
+
+        & p {
+            @include main.paragrafo_1;
+            color:main.$ColorThree;
+            margin-bottom: 0; 
+        }
+
+        & .block {
+            padding: 0 100px;
+        }
+
+        & .lista {
+            @include main.FlexCenCen;
+            flex-wrap: wrap;
+            gap:0 45px;
+            padding-top: 65px;
+
+            & .item {
+                margin-bottom: 50px;
+
+                & img {
+                    margin-bottom: 20px;
+                }
+
+                & h4 {
+                    @include main.paragrafo_1;
+                    font-weight: 500;
+                    color:#255c86;
+                    margin-bottom: 5px;
+                }
+
+                & h5 {
+                    color:#1f252b;
+                }
+            }
+        }
+     }
+
+     // ORCAMENTO 
+
+     .orcamento {
+        padding-bottom: 80px;
+        background: url("../img/produtos_servicos/orcamento.jpg") bottom center no-repeat;
+
+         & .display {
+             padding: 48px 130px;
+             background: #ffffff;
+             box-shadow: 0 2px 38px -28px rgb(0 0 0 / 50%);
+             @include main.FlexCenCen;
+             gap:0 30px;
+             border-radius: 15px;
+         }
+
+         & .img {
+             display: flex;
+             align-items: flex-end;
+             width: 460px;
+             height: 540px;
+             background: url("../img/produtos_servicos/bg_orcamento.jpg") right center no-repeat;
+
+            & div {
+                background: #255c86;
+                width: 360px;
+                min-height: 230px;
+                margin-bottom: 55px;
+                color: #fff;
+                @include main.titleType4;
+                padding: 30px 10px 15px 70px;
+                font-weight:600;
+                line-height: 1.2;
+
+                & span {
+                    color:#00c0ff;
+                }
+            }
+         }
+
+         & .form {
+            width: 680px;
+         }
+     }
+
+     // ASSISTENCIA 
+
+     .assistencia {
+        background-color: #efefef;
+        padding-bottom: 30px;
+        position: relative;
+
+         & .title {
+            background: #255c86;
+            text-align: center;
+            padding: 65px 0 50px 0;
+
+            & h3 {
+                @include main.titleType3;
+                color:main.$ColorFour;
+                margin-bottom: 5px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            & h4 {
+                font-size: reset.toRem(24);
+                color:#00c0ff;
+                margin-bottom: 5px;
+                font-weight:400;
+            }
+         }
+
+         & .out_form {
+             padding: 55px 0;
+            
+
+             & .form {
+                 width: 930px;
+                 margin: 0 auto;
+
+                & select,
+                input[type="text"], 
+                textarea {
+                    background: #fff;
+                }
+             }
+         }
+     }
+}
+
+/* ACCORDION */
+
+
+.accordion {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+	}
+
+.accordion__item {
+	display: block;
+	width: 100%;
+    padding: 90px 0;
+	
+	
+	&:last-child {
+	margin-bottom: 0; }
+	}
+
+.accordion__title {
+	display: block;
+	position: relative;
+	padding: 50px 0;
+	overflow: hidden;
+	cursor:  pointer;
+	transition: background-color .2s;
+}
+
+.accordion__content {
+	display: none;
+	position: relative;
+	overflow: hidden;
+	border-top: none;
+	line-height: 1.8;
+	font-size: 15px;
+	color: #060606;
+	padding-top: 5px;
+	margin-bottom: 15px;
+	}
+
+.accordion .seta {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #275d87;
+    }
+}
+
+.accordion .seta span {
+    background: #ffffff url('../img/seta.png') center no-repeat;
+    height: 100%;
+    display: block;
+    width: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.accordion__item.teste .seta span {
+    transform: rotate(180deg);
+}
+
+/*OPEN FORM*/
+  
+#open-form {
+    background-color: #00c0ff; 
+    padding: reset.toRem(30); 
+    display: block; 
+    text-align: center; 
+    margin: 10px;
+    font-size: reset.toRem(20);
+    font-weight: 600;
+    color:#255c86;
+    cursor: pointer;
+
+    & div span {
+        display: inline-block;
+        position: relative;
+        padding: 0 35px;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../img/seta_open_form.png') center no-repeat;
+            height: 16px;
+            width: 27px;
+            top:6px;
+            transform: rotate(180deg);
+            transition: 0.3s all;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+
+    &.opened span {
+        &::after,
+        &::before {
+            transform: rotate(0deg);
+            transition: 0.3s all;
+        }
+    }
+}
+
+
+
+/* ================
+   RESPONSIVE
+   ================ */
+
+   /* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) {
+    .content_prod {
+        // CONTENT 2
+
+        & .content_2 {
+
+            & h2 {
+                margin-bottom: 30px;
+                font-size: reset.toRem(25);
+            }
+
+            & .container {
+                gap:0 15px;
+
+                & .item {
+                    padding: 30px 20px;
+                    min-height: auto;
+                    font-size: reset.toRem(18);
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+    .content_prod {
+        // CONTENT 3
+
+        & .content_3 {
+            padding-top: 100px;
+
+            & h3 {
+                font-size: reset.toRem(24);
+                margin-bottom: 20px;
+            }
+
+            & .display {
+                flex-wrap: wrap;
+                gap: 15px 25px;
+
+                & div {
+                    font-size: reset.toRem(18);
+                    font-weight: 500;
+                    padding-top: 50px;
+                }
+            }
+        }
+
+        // ORCAMENTO 
+
+        .orcamento {
+            padding-bottom: 40px;
+
+            & .display {
+                padding: 25px 20px;
+
+                & span {
+                    display: block;
+                }
+            }
+             & .img {
+                height: auto;
+                & div {
+                    min-height: auto;
+                }
+             }
+        }
+
+    }// CONTENT PROD 
+}
+
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+    .content_prod {
+    
+        & .content_1 {
+            padding: 30px 0 20px 0;
+
+            & .display {
+                gap:0 35px;
+                padding-bottom: 25px;
+                margin-bottom: 15px;
+            }
+
+            & h2 {
+                font-size: reset.toRem(25);
+            }
+
+            & p {
+                @include main.paragrafo_2;
+             }
+        }
+
+        & .content_2 {
+
+            & .container {
+                flex-wrap: wrap;
+
+                & .item {
+                    height: 260px;
+                    font-size: reset.toRem(16);
+                    text-align: center;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+
+                    & .ico {
+    
+                        &::after {
+       
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        // CONTENT 4
+
+        & .content_4 {
+            height: 200px;
+
+            & h1 {
+                @include main.titleType4;
+            }
+        }
+
+        // CONTENT 5
+        
+        & .content_5 {
+            padding-top: 40px;
+
+            & .accordion {
+                margin-top: 20px;
+
+                & .accordion__title {
+                    padding: 20px 0;
+                }
+            }
+
+            & .block {
+                padding: 0;
+                text-align: center;
+
+                & h3 {
+                    @include main.titleType5;
+                }
+
+                & p {
+                    @include main.paragrafo_2;
+                }
+            }
+        }
+
+        // ORCAMENTO 
+
+       .orcamento {
+            background: none;
+
+         & .display {
+             flex-wrap: wrap;
+         }
+
+         & .img {
+             align-items: center;
+             width: 100%;
+             min-height: auto;
+             background: none;
+
+            & div {
+                width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+                @include main.titleType5;
+                padding: 20px 30px;
+                text-align: center;
+
+                & br {
+                    display: none;
+                }
+            }
+         }
+
+         & .form {
+            width: 100%;
+         }
+     }
+
+     // ASSISTENCIA 
+
+     .assistencia {
+        padding-bottom: 30px;
+
+        &::after {
+            height: 30px;
+        }
+
+         & .title {
+            padding: 40px 0 30px 0;
+
+            & h3 {
+                @include main.titleType4;
+            }
+
+            & h4 {
+                font-size: reset.toRem(18);
+            }
+         }
+
+         & .out_form {
+             padding: 30px 25px;
+            
+
+             & .form {
+                 width: 100%;
+             }
+         }
+     }
+
+
+        
+    }//CONTENT PROD
+}
+
+/* TABLET BIG - 900px*/ 
+@include main.breakpoint(smashTabletBig) {
+    .content_prod {
+    
+        & .content_1 {
+            padding: 30px 0 20px 0;
+
+            & .display {
+                flex-wrap: wrap;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & h2 {
+                font-size: reset.toRem(25);
+                margin-bottom: 15px;
+                text-align: center;
+
+                & br {
+                    display: none;
+                }
+            }
+
+            & span {
+                display: none;
+            }
+
+            & p {
+                width: 100%;
+                text-align: center;
+
+                & br {
+                    display: none;
+                }
+             }
+        }
+
+        // CONTENT 3
+
+        & .content_3 {
+            margin-top: 25px;
+            padding-top: 30px;
+
+            & .display div {
+                width: 48%;
+
+                & br {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+

@@ -1,5 +1,3 @@
-<?php include('meta_tags.php'); ?>
-
 <header>
     <div class="container">
 
