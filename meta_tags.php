@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#000000"/>
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <title>Site Institucional</title>
 

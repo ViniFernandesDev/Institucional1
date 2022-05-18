@@ -80,12 +80,3 @@
         });
     });
 </script>
-
-<!-- img heigth and width -->
-<script>
-$(document).ready(function(){
-        $("img").each(function(i,e) {
-        $(this).attr({width: $(this).width(), height: $(this).height()});
-    });
-});
-</script>
