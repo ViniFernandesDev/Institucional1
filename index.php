@@ -23,7 +23,7 @@
 
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
 
-                <a href="/sobre_nos" class="btn_type1">Conheça nossa história.</a>
+                <a href="/sobre_nos.php" class="btn_type1">Conheça nossa história.</a>
             </div><!--txt-->
 
             <div class="img">
@@ -44,7 +44,7 @@
                  final das peças, com acabamentos detalhados,<br>
                   tamanhos diversificados e encaixe exato.</p>
 
-                <a href="/produtos_servicos" class="btn_type2">Veja as opções para o seu negócio.</a>
+                <a href="/produtos_servicos.php" class="btn_type2">Veja as opções para o seu negócio.</a>
             </div><!--txt-->
         </div><!--container-->
     </div><!--content_2-->
