@@ -179,7 +179,7 @@
     & .form {
         width: 700px;
         
-        & h6 {
+        & h4 {
             @include main.titleType5;
             color:main.$ColorOne;
             font-weight: 600;

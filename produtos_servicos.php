@@ -25,7 +25,7 @@
 
                 <span></span>
 
-                <p>Todos os serviços prestados pela Tecnomoldes Ferramentaria são<br>
+                <p>Todos os serviços prestados são<br>
                     realizados por profissionais qualificados e rigorosamente supervisionados para<br>
                     que os melhores resultados sejam atingidos.</p>
             </div>

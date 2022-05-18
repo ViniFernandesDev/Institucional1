@@ -438,6 +438,7 @@ footer .content_2 .white_box div {
   font-size: 1rem;
   margin-top: 20px;
   transition: 0.3s all;
+  border-radius: 20px;
 }
 .btn_type1:hover {
   background: #206ab2;
@@ -454,6 +455,7 @@ footer .content_2 .white_box div {
   font-weight: 400;
   margin-top: 20px;
   transition: 0.3s all;
+  border-radius: 20px;
 }
 .btn_type2:hover {
   border: 3px solid #2c2b2a;
@@ -881,7 +883,7 @@ footer .content_2 .white_box div {
 .help_index .form {
   width: 700px;
 }
-.help_index .form h6 {
+.help_index .form h4 {
   font-size: 1.25rem;
   color: #206ab2;
   font-weight: 600;
@@ -1937,7 +1939,7 @@ footer .content_2 .white_box div {
 }
 
 .dl-menuwrapper button {
-  background: #206ab2 url("../images/menu_icon.png") right 15px center no-repeat;
+  background: #206ab2 url("../img/menu_icon.png") right 15px center no-repeat;
   border: none;
   width: 100%;
   height: 48px;
@@ -1959,7 +1961,7 @@ footer .content_2 .white_box div {
 
 .dl-menuwrapper button.dl-active {
   color: #ffffff;
-  background: #3a9bfa url("../images/menu-close.png") right 15px center no-repeat;
+  background: #3a9bfa url("../img/menu-close.png") right 15px center no-repeat;
 }
 
 .dl-menuwrapper ul {

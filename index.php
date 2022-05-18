@@ -10,7 +10,7 @@
 <?php include('header.php'); ?>
 
 <section class="banner">
-	<img src="assets/img/banner.jpg">
+	<img src="assets/img/banner.jpg" alt="Banner">
 </section><!-- banner -->
 
 <section class="content_index">
@@ -27,7 +27,7 @@
             </div><!--txt-->
 
             <div class="img">
-                <img src="assets/img/corte2.png">
+                <img src="assets/img/corte2.png" alt="Corte">
             </div><!--img-->
         </div><!--container-->
     </div><!--content_1-->
@@ -35,7 +35,7 @@
     <div class="content_2">
         <div class="container">
             <div class="img">
-                <img src="assets/img/molde_litro.png">
+                <img src="assets/img/molde_litro.png" alt="Molde">
             </div><!--img-->    
         
             <div class="txt">
@@ -67,7 +67,7 @@
         </div>
 
         <div class="form inputs">
-            <h6>Ou solicite uma chamada</h6>
+            <h4>Ou solicite uma chamada</h4>
 
             <form id="ajuda" name="ajuda" action="" method="POST" data-reset="true">
 

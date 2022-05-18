@@ -69,5 +69,23 @@
     </div><!--content_2-->
 </footer>
 
-<script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/modernizr.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/menu_mobile.js"></script>
+
+<script>
+    $(function(){
+        $('#dl-menu').dlmenu({
+            animationClasses: {classin: 'dl-animate-in-4', classout: 'dl-animate-out-4'}
+        });
+    });
+</script>
+
+<!-- img heigth and width -->
+<script>
+$(document).ready(function(){
+        $("img").each(function(i,e) {
+        $(this).attr({width: $(this).width(), height: $(this).height()});
+    });
+});
+</script>
