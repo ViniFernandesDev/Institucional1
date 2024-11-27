@@ -1,4 +1,4 @@
-Portfólio desenvolvido com HTML5 e CSS3 utilizando SCSS para estilização.
+Projeto desenvolvido com HTML5 e CSS3 utilizando SCSS para estilização.
 O projeto segue o método ITCSS (Inverted Triangle CSS) para organização dos arquivos SCSS, estruturando o código em camadas que vão do mais genérico ao mais específico, garantindo maior manutenção e escalabilidade.
 
 Adotei o padrão BEM (Block Element Modifier) para a nomenclatura dos componentes, promovendo semântica e modularidade no HTML. 
